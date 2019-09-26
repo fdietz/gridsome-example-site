@@ -2,15 +2,17 @@
   "name": "my-gridsome-site",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "lambda:serve": "netlify-lambda serve ./lambda"
+    "gridsome:build": "gridsome build",
+    "gridsome:develop": "gridsome develop",
+    "gridsome:explore": "gridsome explore",
+    "lambda:serve": "netlify-lambda serve ./lambda",
+    "lambda:build": "netlify-lambda build ./lambda",
+    "build": "npm run lambda:build && npm run gridsome:build"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.4",
-    "gridsome": "^0.7.0",
+    "gridsome": "^0.7.5",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.9.7",
     "netlify-lambda": "^1.6.3"
