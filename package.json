@@ -4,13 +4,15 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "functions": "netlify-lambda serve ./lambda"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.4",
     "gridsome": "^0.7.0",
     "gridsome-plugin-netlify-cms": "^1.0.9",
-    "netlify-cms": "^2.9.7"
+    "netlify-cms": "^2.9.7",
+    "netlify-lambda": "^1.6.3"
   }
 }

@@ -1,7 +1,8 @@
 <template>
   <Layout>
     <h1 v-html="$page.post.title"></h1>
-    <div v-html="$page.post.body" />
+    <h3>{{$page.post.date}}</h3>
+    <div v-html="$page.post.content" />
   </Layout>
 </template>
 
@@ -19,7 +20,8 @@ export default {
 query Post($id: ID!) {
   post(id: $id) {
     title
-    body
+    date
+    content
   }
 }
 </page-query>
