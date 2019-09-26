@@ -5,7 +5,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "functions": "netlify-lambda serve ./lambda"
+    "lambda:serve": "netlify-lambda serve ./lambda"
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.0",
